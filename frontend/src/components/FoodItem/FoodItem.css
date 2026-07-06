@@ -7,6 +7,10 @@
   animation: fadeIn 1s;
 }
 
+.food-item:hover {
+  transform: translateY(-5px);
+}
+
 .food-item-image {
   width: 100%;
   border-radius: 15px 15px 0px 8px;
@@ -33,4 +37,32 @@
   font-weight: 500;
   font-size: 22px;
   margin: 10px 0;
+}
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-img-container .add {
+  position: absolute;
+  bottom: 15px;
+  width: 35px;
+  right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  padding: 6px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.food-item-counter img {
+  width: 30px;
 }
